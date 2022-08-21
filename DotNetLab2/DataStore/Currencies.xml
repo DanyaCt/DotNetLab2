@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Currencies>
+  <Currency>
+    <Id>1</Id>
+    <Name>UAH</Name>
+  </Currency>
+  <Currency>
+    <Id>2</Id>
+    <Name>USD</Name>
+  </Currency>
+  <Currency>
+    <Id>3</Id>
+    <Name>TRY</Name>
+  </Currency>
+</Currencies>

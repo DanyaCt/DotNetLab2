@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClientsToCredits>
+  <ClientToCredit>
+    <ClientId>1</ClientId>
+    <CreditId>3</CreditId>
+    <DateOfIssue>2021-10-12T00:00:00+03:00</DateOfIssue>
+    <DateOfRepayment>2022-10-03T00:00:00+03:00</DateOfRepayment>
+    <AmountOfMoneyTaken>100000</AmountOfMoneyTaken>
+  </ClientToCredit>
+  <ClientToCredit>
+    <ClientId>1</ClientId>
+    <CreditId>3</CreditId>
+    <DateOfIssue>2022-03-07T00:00:00+02:00</DateOfIssue>
+    <DateOfRepayment />
+    <AmountOfMoneyTaken>25000</AmountOfMoneyTaken>
+  </ClientToCredit>
+  <ClientToCredit>
+    <ClientId>3</ClientId>
+    <CreditId>2</CreditId>
+    <DateOfIssue>2022-10-05T00:00:00+03:00</DateOfIssue>
+    <DateOfRepayment>2022-11-06T00:00:00+02:00</DateOfRepayment>
+    <AmountOfMoneyTaken>2000000</AmountOfMoneyTaken>
+  </ClientToCredit>
+</ClientsToCredits>

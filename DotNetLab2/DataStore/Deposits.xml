@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deposits>
+  <Deposit>
+    <Id>1</Id>
+    <CurrencyId>1</CurrencyId>
+    <DurationInMonths>12</DurationInMonths>
+    <MinimalInvestment>1000</MinimalInvestment>
+    <PercentRate>1</PercentRate>
+  </Deposit>
+  <Deposit>
+    <Id>2</Id>
+    <CurrencyId>2</CurrencyId>
+    <DurationInMonths>24</DurationInMonths>
+    <MinimalInvestment>500</MinimalInvestment>
+    <PercentRate>1.5</PercentRate>
+  </Deposit>
+  <Deposit>
+    <Id>3</Id>
+    <CurrencyId>3</CurrencyId>
+    <DurationInMonths>24</DurationInMonths>
+    <MinimalInvestment>50000</MinimalInvestment>
+    <PercentRate>5</PercentRate>
+  </Deposit>
+  <Deposit>
+    <Id>4</Id>
+    <CurrencyId>1</CurrencyId>
+    <DurationInMonths>6</DurationInMonths>
+    <MinimalInvestment>2500</MinimalInvestment>
+    <PercentRate>10</PercentRate>
+  </Deposit>
+  <Deposit>
+    <Id>6</Id>
+    <CurrencyId>2</CurrencyId>
+    <DurationInMonths>15</DurationInMonths>
+    <MinimalInvestment>245</MinimalInvestment>
+    <PercentRate>2</PercentRate>
+  </Deposit>
+</Deposits>

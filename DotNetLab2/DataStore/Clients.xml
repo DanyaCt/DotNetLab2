@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Clients>
+  <Client>
+    <Id>1</Id>
+    <FullName>Semenuk Daniil Volodimirovich</FullName>
+    <PhoneNumber>+380529625378</PhoneNumber>
+    <RegistrationCode>1111111111</RegistrationCode>
+  </Client>
+  <Client>
+    <Id>2</Id>
+    <FullName>Stankov Artem Vitaliyovich</FullName>
+    <PhoneNumber>+380542256956</PhoneNumber>
+    <RegistrationCode>1234567890</RegistrationCode>
+  </Client>
+  <Client>
+    <Id>3</Id>
+    <FullName>Vinnyk Vitaliy Vadymovich</FullName>
+    <PhoneNumber>+380554545455</PhoneNumber>
+    <RegistrationCode>0987654321</RegistrationCode>
+  </Client>
+  <Client>
+    <Id>4</Id>
+    <FullName>Zozuluk Viktor Olehovich</FullName>
+    <PhoneNumber>+380554545455</PhoneNumber>
+    <RegistrationCode>0987654321</RegistrationCode>
+  </Client>
+  <Client>
+    <Id>4</Id>
+    <FullName>Liienko Denys Kostyantynovych</FullName>
+    <PhoneNumber>0956892007</PhoneNumber>
+    <RegistrationCode>8943753894</RegistrationCode>
+  </Client>
+  <Client>
+    <Id>6</Id>
+    <FullName>John Doe</FullName>
+    <PhoneNumber>0956823344</PhoneNumber>
+    <RegistrationCode>543803</RegistrationCode>
+  </Client>
+  <Client>
+    <Id>7</Id>
+    <FullName>Hello World</FullName>
+    <PhoneNumber>0957773344</PhoneNumber>
+    <RegistrationCode>4389483948</RegistrationCode>
+  </Client>
+</Clients>

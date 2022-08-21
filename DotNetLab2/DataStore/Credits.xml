@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Credits>
+  <Credit>
+    <Id>1</Id>
+    <CurrencyId>1</CurrencyId>
+    <RepaymentDurationInMonths>10</RepaymentDurationInMonths>
+    <PercentRate>5</PercentRate>
+  </Credit>
+  <Credit>
+    <Id>2</Id>
+    <CurrencyId>3</CurrencyId>
+    <RepaymentDurationInMonths>12</RepaymentDurationInMonths>
+    <PercentRate>0.5</PercentRate>
+  </Credit>
+  <Credit>
+    <Id>3</Id>
+    <CurrencyId>2</CurrencyId>
+    <RepaymentDurationInMonths>3</RepaymentDurationInMonths>
+    <PercentRate>15</PercentRate>
+  </Credit>
+</Credits>
