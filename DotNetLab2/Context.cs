@@ -54,9 +54,10 @@ namespace DotNetLab2
         {
             var doc = new XmlDocument();
             doc.Load(path);
-            using var nodeReader = new XmlNodeReader(doc);
-            nodeReader.MoveToContent();
-            return XDocument.Load(nodeReader);
+            using (var nodeReader = new XmlNodeReader(doc))
+            {
+                return XDocument.Load(nodeReader);
+            }
         }
         public void EnsureDataSeeded()
         {

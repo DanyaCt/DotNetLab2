@@ -18,13 +18,13 @@ namespace DotNetLab2
             var queries = new Queries(context);
             var printer = new QueryPrinter();
 
-            MenuPrinter.Print();
-
             while (true)
             {
+                MenuPrinter.Print();
                 Console.Write("Enter an option: ");
                 if (Int32.TryParse(Console.ReadLine(), out var option))
                 {
+                    Console.Clear();
                     switch (option)
                     {
                         case 0:
@@ -67,91 +67,50 @@ namespace DotNetLab2
                             printer.PrintClientsFullNames(
                                 queries.GetClientsFullNames()
                             );
-                            break;
-
-                        case 7:
                             printer.PrintClientsWithAccountNumbers(
                                 queries.GetClientsWithAccountNumbers().Distinct()
                             );
-                            break;
-
-                        case 8:
                             printer.PrintCreditsAfter2022(
                                 queries.GetCreditsAfter2022()
                             );
-                            break;
-
-                        case 9:
                             printer.PrintDepositsGroupedByCurrency(
                                 queries.GetDepositsGroupedByCurrency()
                             );
-                            break;
-
-                        case 10:
                             printer.PrintNotRepayedCredits(
                                 queries.GetNotRepayedCredits()
                             );
-                            break;
-
-                        case 11:
                             printer.PrintDepositsAndTheirUsageQuantity(
                                 queries.GetDepositsAndTheirUsageQuantity()
                             );
-                            break;
-
-                        case 12:
                             printer.PrintClientWithCreditsWithoutDeposits(
                                 queries.GetClientWithCreditsWithoutDeposits()
                             );
-                            break;
-
-                        case 13:
                             printer.PrintClientAndNumberOfCredits(
                                 queries.GetClientAndNumberOfCredits()
                             );
-                            break;
-
-                        case 14:
                             printer.PrintAverageDurationDepositsAndActualAverageDuration(
                                 queries.GetAverageDurationDepositsAndActualAverageDuration()
                             );
-                            break;
-
-                        case 15:
                             printer.PrintQuantityOfClientsWithCreditNoLessThan50000UAH(
                                 queries.GetQuantityOfClientsWithCreditNoLessThan50000UAH()
                             );
-                            break;
-
-                        case 16:
                             printer.PrintClientWithMostCreditsWithHisMoneyAndSortedMoney(
                                 queries.GetClientWithMostCreditsWithHisMoneyAndSortedMoney()
                             );
-                            break;
-
-                        case 17:
                             printer.PrintCreditsWithRepaymentNoLess6Month(
                                 queries.GetCreditsWithRepaymentNoLess6Month()
                             );
-                            break;
-
-                        case 18:
                             printer.PrintClientsWithoutDepositsAndCredits(
                                 queries.GetClientsWithoutDepositsAndCredits()
                             );
-                            break;
-
-                        case 19:
                             printer.PrintClientsSuccessfullyRepayedTheirCredits(
                                 queries.GetClientsSuccessfullyRepayedTheirCredits()
                             );
-                            break;
-
-                        case 20:
                             printer.PrintUnusedDeposits(
                                 queries.GetUnusedDeposits()
                             );
                             break;
+
                     }
                 }
             }
