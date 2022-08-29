@@ -235,5 +235,14 @@ namespace DotNetLab2
                             (ctd, deposit) => deposit.ToEntity<Deposit>())
                 );
         }
+        public IEnumerable<(string, int)> GetDepositsAndCredits()
+        {
+            return _context.Deposits.Root?.Elements().Select(d => d.ToEntity<Deposit>())
+                .Select(x => (nameof(Deposit), x.Id))
+                .Concat(
+                    _context.Credits.Root?.Elements().Select(d => d.ToEntity<Credit>())
+                        .Select(y => (nameof(Credit), y.Id))
+                );
+        }
     }
 }

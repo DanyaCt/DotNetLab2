@@ -137,8 +137,17 @@ namespace DotNetLab2
             Console.WriteLine("\n15. Deposits that are not used by the clients:");
             foreach (var deposit in deposits)
             {
-                Console.WriteLine($"{deposit.Id} - {deposit.PercentRate:0.00}%, minimal investment = {deposit.MinimalInvestment}\n");
+                Console.WriteLine($"{deposit.Id} - {deposit.PercentRate:0.00}%, minimal investment = {deposit.MinimalInvestment}");
             }
+        }
+        public void PrintDepositsAndCredits(IEnumerable<(string, int)> operations)
+        {
+            Console.WriteLine("\n16. Deposits and credits:");
+            foreach (var operation in operations)
+            {
+                Console.WriteLine($"{operation.Item1} - Id: {operation.Item2}");
+            }
+            Console.WriteLine();
         }
     }
 }

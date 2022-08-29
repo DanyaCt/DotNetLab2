@@ -109,6 +109,9 @@ namespace DotNetLab2
                             printer.PrintUnusedDeposits(
                                 queries.GetUnusedDeposits()
                             );
+                            printer.PrintDepositsAndCredits(
+                                queries.GetDepositsAndCredits()
+                            );
                             break;
 
                     }
