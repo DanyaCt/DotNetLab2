@@ -140,7 +140,7 @@ namespace DotNetLab2
             return (average, actualAverage);
         }
 
-        public int GetQuantityOfClientsWithCreditNoLessThan50000UAH()
+        public int GetQuantityOfClientsWithCreditNoLessThanInputMoneyUAH(decimal money)
         {
             return _context.ClientsToCredits.Root?.Elements()
                 .Join(_context.Credits.Root?.Elements()!,
@@ -152,7 +152,7 @@ namespace DotNetLab2
                     currency => currency.Element("Id")?.Value,
                     (credit, currency) => (credit.ctc, credit.credit, currency))
                 .Count(x => x.currency.Element("Name").Value.Equals("UAH")
-                            && Convert.ToDecimal(x.ctc.Element("AmountOfMoneyTaken").Value) >= 50000m) ?? 0;
+                            && Convert.ToDecimal(x.ctc.Element("AmountOfMoneyTaken").Value) >= money) ?? 0;
         }
 
         public ClientWithCreditMoney GetClientWithMostCreditsWithHisMoneyAndSortedMoney()
@@ -179,10 +179,10 @@ namespace DotNetLab2
             return groups.FirstOrDefault(x => x.Money.Count() == maxQuantity);
         }
 
-        public IEnumerable<Credit> GetCreditsWithRepaymentNoLess6Month()
+        public IEnumerable<Credit> GetCreditsWithRepaymentNoLessInputMonth(int month)
         {
             return _context.Credits.Root?.Elements()
-                .Where(x => Convert.ToInt32(x.Element("RepaymentDurationInMonths").Value) >= 6)
+                .Where(x => Convert.ToInt32(x.Element("RepaymentDurationInMonths").Value) >= month)
                 .Select(x => x.ToEntity<Credit>());
         }
 

@@ -91,14 +91,14 @@ namespace DotNetLab2
                             printer.PrintAverageDurationDepositsAndActualAverageDuration(
                                 queries.GetAverageDurationDepositsAndActualAverageDuration()
                             );
-                            printer.PrintQuantityOfClientsWithCreditNoLessThan50000UAH(
-                                queries.GetQuantityOfClientsWithCreditNoLessThan50000UAH()
+                            printer.PrintQuantityOfClientsWithCreditNoLessThanInputMoneyUAH(
+                                queries.GetQuantityOfClientsWithCreditNoLessThanInputMoneyUAH(500m)
                             );
                             printer.PrintClientWithMostCreditsWithHisMoneyAndSortedMoney(
                                 queries.GetClientWithMostCreditsWithHisMoneyAndSortedMoney()
                             );
-                            printer.PrintCreditsWithRepaymentNoLess6Month(
-                                queries.GetCreditsWithRepaymentNoLess6Month()
+                            printer.PrintCreditsWithRepaymentNoLessInputMonth(
+                                queries.GetCreditsWithRepaymentNoLessInputMonth(6)
                             );
                             printer.PrintClientsWithoutDepositsAndCredits(
                                 queries.GetClientsWithoutDepositsAndCredits()

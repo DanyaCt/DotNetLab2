@@ -147,6 +147,14 @@ namespace DotNetLab2.DataSeeding
                 AmountOfMoneyTaken = 2000000,
                 DateOfIssue = Convert.ToDateTime("10.05.2022"),
                 DateOfRepayment = Convert.ToDateTime("11.06.2022")
+            },
+            new ClientToCredit
+            {
+                ClientId = 2,
+                CreditId = 1,
+                AmountOfMoneyTaken = 2000,
+                DateOfIssue = Convert.ToDateTime("10.05.2022"),
+                DateOfRepayment = Convert.ToDateTime("13.06.2022")
             }
         };
         public static List<ClientToDeposit> ClientsToDeposits => new()

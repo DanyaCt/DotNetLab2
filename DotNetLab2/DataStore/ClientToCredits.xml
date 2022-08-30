@@ -21,4 +21,11 @@
     <DateOfRepayment>2022-11-06T00:00:00+02:00</DateOfRepayment>
     <AmountOfMoneyTaken>2000000</AmountOfMoneyTaken>
   </ClientToCredit>
+  <ClientToCredit>
+    <ClientId>2</ClientId>
+    <CreditId>1</CreditId>
+    <DateOfIssue>2022-05-10T00:00:00+03:00</DateOfIssue>
+    <DateOfRepayment>2022-06-13T00:00:00+03:00</DateOfRepayment>
+    <AmountOfMoneyTaken>2000</AmountOfMoneyTaken>
+  </ClientToCredit>
 </ClientsToCredits>
